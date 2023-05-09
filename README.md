@@ -1,21 +1,46 @@
-# Busca de Empresas com o Google Places
-<p>Este projeto faz parte de uma tentativa de aprendizado em Python e utiliza a API do Google Places para buscar empresas com base em um nicho e localização específicos. É importante ressaltar que o projeto deve ser utilizado com cuidado. Ele retorna informações como nome, endereço, telefone e e-mail das empresas encontradas.</p>
-<h2>Como utilizar</h2>
-<ol>
-  <li>Obtenha uma chave de API do Google Places</li>
-  <li>Instale o Requests executando o comando no terminal ou prompt de comando: <code>pip install requests</code></li>
-  <li>Instale o Pandas executando o comando no terminal ou prompt de comando: <code>pip install pandas</code></li>
-  <li>Crie um arquivo Python e adicione o código</li>
-  <li>Execute o arquivo e siga as instruções para digitar o nicho e a localização desejados</li>
-  <li>Um arquivo CSV com os dados será criado na pasta do projeto</li>
-</ol>
-<h2>Tecnologias utilizadas</h2>
+<h2> Projeto de Busca de Locais </h2>
+
+<p> Este repositório contém dois projetos independentes de busca de locais utilizando a API do Google Places. Ambos projetos buscam locais a partir de um termo de pesquisa e localização informados pelo usuário, porém as funcionalidades e implementações são diferentes. </p>
+
+<h3> Projeto 1 - code.py </h3>
+
+<p> Este projeto solicita ao usuário um nicho de interesse e uma localização, em seguida busca locais utilizando a API do Google Places. Para cada local encontrado, são buscados o telefone e o e-mail, quando disponíveis. As informações coletadas são armazenadas em um Pandas DataFrame e exportadas para um arquivo CSV. </p>
+
+<p> Requisitos </p>
 <ul>
-  <li>Python</li>
-  <li>API do Google Places</li>
-  <li>Requests</li>
-  <li>JSON</li>
-  <li>Pandas</li>
+<li> Python 3 </li>
+<li> requests </li>
+<li> pandas </li>
 </ul>
-<h2>Como contribuir</h2>
-<p>Se você deseja contribuir para esta aplicação, sinta-se livre para fazer um fork do repositório e enviar suas sugestões por meio de pull requests. As contribuições são bem-vindas.</p>
+
+<p> Como usar </p>
+<ol>
+<li> Clone este repositório em sua máquina. </li>
+<li> Execute o arquivo code.py em um ambiente Python 3. </li>
+<li> Siga as instruções apresentadas no terminal para informar o nicho de interesse e a localização desejada. </li>
+<li> O resultado será salvo em um arquivo CSV chamado resultado.csv na pasta do projeto. </li>
+</ol>
+
+<h3> Projeto 2 - versao2.py </h3>
+
+<p> Este projeto também solicita ao usuário um termo de pesquisa e uma localização, porém busca locais que possuem um determinado curso na área da saúde em seu site. Pode ser modificado para encontrar cursos em outras áreas de graduação. O usuário pode informar quantos resultados deseja obter. As informações coletadas são armazenadas em um Pandas DataFrame e exportadas para um arquivo CSV. </p>
+
+<p> Requisitos </p>
+<ul>
+<li> Python 3 </li>
+<li> requests </li>
+<li> pandas </li>
+<li> urllib3 </li>
+<li> tenacity </li>
+</ul>
+
+<p> Como usar </p>
+<ol>
+<li> Clone este repositório em sua máquina. </li>
+<li> Execute o arquivo versao2.py em um ambiente Python 3. </li>
+<li> Edite as variáveis termo_busca, localizacao, cursos_saude (informando o curso que deseja buscar), num_resultados e chave_api com as informações desejadas. </li>
+<li> O resultado será salvo em um arquivo CSV chamado resultados.csv na pasta do projeto. </li>
+</ol>
+
+<p> Licença </p>
+<p> Este projeto está licenciado sob a licença GPL-3.0. Consulte o arquivo LICENSE para obter mais informações. </p>
